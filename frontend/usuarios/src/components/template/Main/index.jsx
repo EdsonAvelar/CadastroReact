@@ -5,7 +5,7 @@ import "./index.css";
 
 export default props => (
   <React.Fragment>
-    <Header />
+    <Header {...props} />
     <main className="content">Conteúdo</main>
   </React.Fragment>
 );

@@ -1,4 +1,14 @@
 import React from "react";
 import "./index.css";
 
-export default props => <header className="header">Header</header>;
+export default props => (
+  /* d-none: sumi em dispositivos celulares */
+  <header className="header d-none d-sm-flex flex-column">
+    <h1 className="mt-3">
+      <i className={`fa fa-${props.icon}`}></i>
+      {props.title}
+    </h1>
+
+    <p className="lead text-muted">{props.subtitle}</p>
+  </header>
+);

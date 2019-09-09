@@ -15,7 +15,11 @@ function App() {
     <div className="app">
       <Logo />
       <Nav />
-      <Main />
+      <Main
+        icon="home"
+        title="Início"
+        subtitle="Exemplo de cadastro de usuário"
+      />
       <Footer />
     </div>
   );
